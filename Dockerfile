@@ -71,7 +71,7 @@ ENV PIP_CONSTRAINT=/opt/venv/constraints.txt \
     UV_CONSTRAINT=/opt/venv/constraints.txt
 
 # ---- ComfyUI ----------------------------------------------------------------
-ARG COMFYUI_REF=v0.37.0
+ARG COMFYUI_REF=v0.42.1
 RUN git clone --depth=1 --branch ${COMFYUI_REF} \
         https://github.com/comfyanonymous/ComfyUI.git /opt/ComfyUI \
     && pip install --no-cache-dir -r /opt/ComfyUI/requirements.txt \
